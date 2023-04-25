@@ -1,9 +1,10 @@
-import { Authorization } from './components/Authorization';
+import { Main } from './pages/Main'
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <Authorization />
+      <Main />
     </div>
   );
 }

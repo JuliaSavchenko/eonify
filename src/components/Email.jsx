@@ -1,13 +1,14 @@
 export const Email = (props) => {
-  const { register, errors } = props;
+  const { register, errors } = props
   return (
     <>
-      <label htmlFor='email'>
+      <label htmlFor="email">
         <input
-          placeholder="Email"
-          type='email'
-          name='email'
-          id='email'
+          className="bg-[#F5F9FE] rounded-xl w-80 h-14 pl-4"
+          placeholder="Email or Phone Number"
+          type="email"
+          name="email"
+          id="email"
           {...register('email', {
             required: true,
             minLength: {
@@ -19,5 +20,5 @@ export const Email = (props) => {
       </label>
       <div>{errors?.Email && <p>errors?.Email?.message || 'Error'</p>}</div>
     </>
-  );
-};
+  )
+}
